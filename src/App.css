@@ -1,0 +1,135 @@
+body{
+    direction: rtl;
+    background-color: #a7a7a780;
+}
+
+button, input{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#products{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:  30px;
+}
+
+.prod1{
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(128, 128, 128, 0.462) 0px 0px 8px 3px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 20%;
+}
+
+.prod1 button{
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.prod1:nth-child(3n - 1) button{
+    background-color: #F75A5A;
+}
+
+.prod1:nth-child(3n + 0) button{
+    background-color: #FFA955;
+}
+
+.prod1:nth-child(3n + 1) button{
+    background-color: #FFD63A ;
+}
+
+#ShoppingCart{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ShoppingCart .prod2{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: rgba(128, 128, 128, 0.462) 0px 0px 8px 3px;
+}
+
+#end{
+    margin-top: auto;
+    text-align: center;
+}
+
+#end button{
+    padding: 20px;
+    background-color: #6DE1D2;
+    box-shadow: rgba(128, 128, 128, 0.462) 0px 0px 8px 3px;
+}
+
+h6{
+    font-size: medium;
+}
+
+.prod2 *{
+    margin: 0;
+    padding: 0;
+}
+
+.prod2 h5{
+    margin-top: 5px;
+}
+
+.prod2 button{
+    background-color: #6DE1D2;
+    padding: 10px;
+}
+
+#control{
+    padding: 50px;
+    text-align: center;
+}
+
+#control input, #control button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(128, 128, 128, 0.462) 0px 0px 8px 3px;
+}
+
+#control input{
+    cursor: text;
+    color: #00b3ff;
+}
+
+input:focus{
+    border: 2px solid black;
+}
+
+input::placeholder{
+    color: #00b3ff;
+}
+
+#control button{
+    background-color: #00b3ff;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+i{
+    margin-right: 10px;
+}
